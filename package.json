@@ -1,0 +1,64 @@
+{
+  "name": "gatsby3-netlifycms-tailwind",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Ran Magen <ranmageninbox@gmail.com>",
+  "dependencies": {
+    "@headlessui/react": "^0.3.1",
+    "autoprefixer": "^10.2.4",
+    "gatsby": "^3.0.2",
+    "gatsby-plugin-image": "^1.0.0",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-netlify-cms": "^5.0.0",
+    "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-postcss": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-remark-collection": "^0.1.0",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-plugin-sitemap": "^3.0.0",
+    "gatsby-remark-autolink-headers": "^3.0.0",
+    "gatsby-remark-images": "^4.0.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-excel": "^3.0.0",
+    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "moment": "^2.29.1",
+    "netlify-cms-app": "^2.14.26",
+    "postcss": "^8.2.7",
+    "prop-types": "^15.7.2",
+    "react": "^17",
+    "react-chartjs-2": "^2.11.1",
+    "react-dom": "^17",
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "gatsby-cli": "^3.0.0",
+    "netlify-cli": "^3.10.5",
+    "netlify-cms-proxy-server": "^1.3.11",
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby","netlify","netlifycms","tailwindcss"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build --log-pages",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "yarn run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enrico2/gatsby3-netlifycms-tailwind"
+  },
+  "bugs": {
+    "url": "https://github.com/enrico2/gatsby3-netlifycms-tailwind/issues"
+  }
+}

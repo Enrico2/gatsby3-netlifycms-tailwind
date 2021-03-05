@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: dev
+  squash_merges: true
+
+#local_backend: true
+
+media_folder: src/images/uploads
+public_folder: /images/uploads
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "src/articles"
+    create: true
+    publish: false
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "featuredImg",
+          widget: "image",
+          media_folder: "../images/articles",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    folder: "src/data"
+    create: true
+    publish: false
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

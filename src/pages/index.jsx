@@ -4,116 +4,67 @@ import Seo from "../components/seo"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const WeirdSpacer = () => (
-  <div className="relative pt-6 px-4 sm:px-6 lg:px-8 hidden lg:block" />
-)
-
-const ImageCoverRectangle = () => (
-  <svg
-    className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2 "
-    fill="currentColor"
-    viewBox="0 0 100 100"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-  >
-    <polygon points="50,0 100,0 50,100 0,100" />
-  </svg>
-)
-
 const HomeImage = ({ imageData }) => (
-  <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <GatsbyImage
-      image={imageData}
-      className="object-cover w-full h-full"
-      alt="My Site"
-    />
-  </div>
-)
-
-const SecondaryButton = () => {
-  return (
-    <div className="mt-3 sm:mt-0 sm:ml-3">
-      <Link
-        to="/articles/an-example-article-boys"
-        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 sm:py-4 sm:text-lg sm:px-10"
+  <>
+    <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 ">
+      <svg
+        className="hidden lg:block absolute left-0 inset-y-0 h-full w-48 text-white z-40 transform scale-105"
+        fill="currentColor"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        aria-hidden="true"
       >
-        pitter patter.
-      </Link>
+        <polygon points="0,0 100,0 50,100 0,100" />
+      </svg>
+      <GatsbyImage
+        image={imageData}
+        className="object-cover w-full h-full z-30"
+        alt="My Site"
+      />
     </div>
-  )
-}
+  </>
+)
 
 const HeroContent = () => (
-  <div
-    className="
-      mx-auto max-w-7xl px-4
-      sm:px-6 sm:mt-8
-      lg:px-8"
-  >
+  <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
     <div className="sm:text-center lg:text-left">
-      <div className="text-4xl tracking-tight font-extrabold text-gray-900">
-        <h1
-          className="
-            text-3xl mb-10 tracking-tight text-gray-900 text-center
-            sm:text-5xl
-            lg:mb-20 lg:text-left"
-        >
-          My website
-        </h1>
-        <h2
-          className="text-2xl text-primary-800
-            sm:text-4xl"
-        >
-          Is very pretty
-        </h2>
-        <h3
-          className="
-            text-2xl font-bold mt-4 text-primary-600
-            sm:text-3xl"
-        >
-          Because it's using gatsby and stuff
-        </h3>
-      </div>
-      <div
-        className="
-          mt-2 text-base text-gray-500 text-2xl
-          sm:mt-4 sm:max-w-xl sm:mx-auto
-          lg:mx-0"
-      >
-        <ul className="list-disc ml-4 text-left">
-          <li>Howre'ya now?</li>
-          <li>good'n'you?</li>
-          <li>nots'bad</li>
-        </ul>
-      </div>
+      <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+        <span className="block xl:inline">Data to enrich your</span>
+        <span className="block text-primary-600 xl:inline">
+          online business
+        </span>
+      </h1>
+      <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+      </p>
       <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
         <div className="rounded-md shadow">
           <Link
-            to="/providers"
-            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 sm:py-4 sm:text-lg sm:px-10"
+            to="/articles"
+            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
           >
-            Get Started
+            Howrya'now?
           </Link>
         </div>
-        <SecondaryButton />
+        <div className="mt-3 sm:mt-0 sm:ml-3">
+          <Link
+            to="/about-s"
+            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 md:py-4 md:text-lg md:px-10"
+          >
+            Good'n'you?
+          </Link>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 )
 
 const Hero = ({ mainImageData }) => {
   return (
     <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div
-          className="relative
-            pb-8 z-10 bg-white
-            sm:pb-10 
-            lg:max-w-2xl lg:w-full lg:pb-28 
-            xl:pb-32"
-        >
-          <ImageCoverRectangle />
-          <WeirdSpacer />
+      <div className="relative max-w-7xl mx-auto z-50">
+        <div className="pb-8 bg-white sm:pb-10  lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <HeroContent />
         </div>
       </div>
@@ -127,15 +78,15 @@ const Articles = ({ articles }) => {
     return (
       <Link
         to={article.slug}
-        className="flex flex-row border border-primary-800 rounded-lg mt-4 hover:bg-primary-100 cursor-pointer bg-white"
+        className="flex flex-row border border-primary-800 rounded-lg mt-4 cursor-pointer bg-white"
       >
         <div className="flex flex-col p-2 sm:w-full md:w-9/12">
+          <div className="font-bold text-lg py-2">{article.title}</div>
           <div className="text-gray-500 text-sm">
             {article.date} • {article.timeToRead} min read
           </div>
-          <div className="font-bold text-lg py-2">{article.title}</div>
           <div className="text-gray-800">{article.excerpt}</div>
-          <div className="text-primary-600 font-bold pt-3 mt-auto px-2 pb-2 hover:underline">
+          <div className="text-primary-600 font-bold pt-3 mt-auto pb-2 hover:underline">
             Read full article
           </div>
         </div>

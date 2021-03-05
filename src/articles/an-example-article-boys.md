@@ -4,20 +4,20 @@ date: "2021-01-05T18:23:00Z"
 featuredImg: "../images/articles/an-example-article-image-boys.jpg"
 ---
 
-This is some text in markdown. Check out the cool ToC.
+You knew your pal had come into money when he started throwing out perfectly good pistachios like he was above cracking ‘em open with a box cutter like the rest of us.
 
-# This is a H2
+# This is a H1
 
-lorem ipsum dolor sit amet, consectetur adipiscing
+Yeah. Oh, hey, look at you, ground.
 
-## This is a H1
+## This is a H2
 
-lorem ipsum dolor sit amet, consectetur adipiscing
+Nice onesie. Does it come in men’s?
 
 ### This is a H3
 
-lorem ipsum dolor sit amet, consectetur adipiscing
+You wanna come to a super soft birthday party?
 
-#### You get the drift
+#### Figure it out
 
-lorem ipsum dolor sit amet, consectetur adipiscing
+Every woman knows that the way to a man’s heart is not through his zipper, it’s through his stomach.

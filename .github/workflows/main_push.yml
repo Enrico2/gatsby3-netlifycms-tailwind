@@ -3,7 +3,7 @@ name: Build Gatsby Site
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:

@@ -1,5 +1,8 @@
 # A Gatsby 3.0 & NetlifyCMS & Github & TailwindCSS starter
 
+As the title says. This is a WIP, especially the README.md, use with caution.
+Versions might not be up to date.
+
 ## Features
 
 ### Gatsby 3.0
